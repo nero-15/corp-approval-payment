@@ -1,0 +1,12 @@
+version: "3.9"
+
+services:
+  php:
+    build: ./
+    image: corp-approval-payment
+    tty: true
+    stdin_open: true
+    volumes:
+      - .:/var/www/html
+    ports:
+      - 8010:80
